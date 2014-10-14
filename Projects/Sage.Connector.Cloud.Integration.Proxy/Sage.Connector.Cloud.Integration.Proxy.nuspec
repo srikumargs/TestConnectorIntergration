@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>Sage.Connector.Cloud.Integration.Proxy</id>
+    <version>$version$</version>
+    <authors>Sage</authors>
+    <owners>Sage</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Sage Connector Cloud integration Proxy</description>
+    <releaseNotes />
+    <copyright>Copyright © Sage 2014</copyright>
+    <dependencies>
+      <dependency id="Sage.Connector.Cloud.Integration.Interfaces" version="$SagePathedVersionString$" />
+    </dependencies>
+  </metadata>
+    <files>
+      <!--<file src="Sage.Connector.Cloud.Integration.Proxy.dll" target="lib\net45\Sage.Connector.Cloud.Integration.Proxy.dll" />-->
+      <file src="Sage.Connector.Cloud.Integration.Proxy.pdb" target="lib\net45\Sage.Connector.Cloud.Integration.Proxy.pdb" />
+    </files>
+</package>

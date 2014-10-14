@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+    <metadata>
+        <id>Sage.Connector.Cloud.Integration.Interfaces</id>
+        <version>$version$</version>
+        <authors>Sage</authors>
+        <owners>Sage</owners>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>Sage Connector Cloud integration Interfaces</description>
+        <releaseNotes />
+        <copyright>Copyright © Sage 2014</copyright>
+        <frameworkAssemblies>
+            <frameworkAssembly assemblyName="System" targetFramework="" />
+            <frameworkAssembly assemblyName="System.Core" targetFramework="" />
+            <frameworkAssembly assemblyName="System.Runtime.Serialization" targetFramework="" />
+            <frameworkAssembly assemblyName="System.ServiceModel" targetFramework="" />
+            <frameworkAssembly assemblyName="System.Xml" targetFramework="" />
+        </frameworkAssemblies>
+    </metadata>
+    <files>
+        <!--<file src="Sage.Connector.Cloud.Integration.Interfaces.dll" target="lib\net45\Sage.Connector.Cloud.Integration.Interfaces.dll" />-->
+        <file src="Sage.Connector.Cloud.Integration.Interfaces.pdb" target="lib\net45\Sage.Connector.Cloud.Integration.Interfaces.pdb" />
+    </files>
+</package>

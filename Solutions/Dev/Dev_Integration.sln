@@ -1,0 +1,97 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30110.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{65371F76-CB97-4378-8473-17F1B9B0E5A2}"
+	ProjectSection(SolutionItems) = preProject
+		BuildServer.testsettings = BuildServer.testsettings
+		BuildServerRemoteExec.testsettings = BuildServerRemoteExec.testsettings
+		CodeCoverageAndTestImpact.testsettings = CodeCoverageAndTestImpact.testsettings
+		Dev_Integration.vsmdi = Dev_Integration.vsmdi
+		Local.testsettings = Local.testsettings
+		NuGet.config = NuGet.config
+		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sage.Connector.Cloud.Integration.Interfaces", "..\..\Projects\Sage.Connector.Cloud.Integration.Interfaces\Sage.Connector.Cloud.Integration.Interfaces.csproj", "{7F0787B4-E149-430D-AA74-7A164B51EFDE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sage.Connector.Cloud.Integration.MockServiceLibrary", "..\..\Projects\Sage.Connector.Cloud.Integration.MockServiceLibrary\Sage.Connector.Cloud.Integration.MockServiceLibrary.csproj", "{81862806-3AF0-41C6-9119-635322B71819}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sage.Connector.Cloud.Integration.HostApp", "..\..\Projects\Sage.Connector.Cloud.Integration.HostApp\Sage.Connector.Cloud.Integration.HostApp.csproj", "{130B3A41-8C63-41D0-9E10-B59564606A92}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sage.Connector.Cloud.Integration.Proxy", "..\..\Projects\Sage.Connector.Cloud.Integration.Proxy\Sage.Connector.Cloud.Integration.Proxy.csproj", "{694A4128-5C39-43E4-836F-3CBB8F16E0BD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sage.Connector.Cloud.Integration.Test", "..\..\Projects\Sage.Connector.Cloud.Integration.Test\Sage.Connector.Cloud.Integration.Test.csproj", "{25A73319-6934-478D-A6C0-F9D53A6A2388}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "LinkedSource", "LinkedSource", "{6B7F9BE9-F2CF-48DF-AA95-F8A9B11571DF}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\Build\GetServerPath.ps1 = ..\..\Build\GetServerPath.ps1
+		..\..\Build\Targets\SageIntegrationGlobal.props = ..\..\Build\Targets\SageIntegrationGlobal.props
+		..\..\Build\Targets\SageIntegrationGlobal.targets = ..\..\Build\Targets\SageIntegrationGlobal.targets
+		..\..\Build\Targets\SageNugetSupport.props = ..\..\Build\Targets\SageNugetSupport.props
+		..\..\Build\Targets\SageNugetSupport.targets = ..\..\Build\Targets\SageNugetSupport.targets
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{F03294F2-E121-4CF8-BCF4-013C0D31195F}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 6
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://orbdevtfs2:8080/tfs/sagecre
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = ..\\..\\Projects\\Sage.Connector.Cloud.Integration.HostApp\\Sage.Connector.Cloud.Integration.HostApp.csproj
+		SccProjectName1 = ../../Projects/Sage.Connector.Cloud.Integration.HostApp
+		SccLocalPath1 = ..\\..\\Projects\\Sage.Connector.Cloud.Integration.HostApp
+		SccProjectUniqueName2 = ..\\..\\Projects\\Sage.Connector.Cloud.Integration.Interfaces\\Sage.Connector.Cloud.Integration.Interfaces.csproj
+		SccProjectName2 = ../../Projects/Sage.Connector.Cloud.Integration.Interfaces
+		SccLocalPath2 = ..\\..\\Projects\\Sage.Connector.Cloud.Integration.Interfaces
+		SccProjectUniqueName3 = ..\\..\\Projects\\Sage.Connector.Cloud.Integration.MockServiceLibrary\\Sage.Connector.Cloud.Integration.MockServiceLibrary.csproj
+		SccProjectName3 = ../../Projects/Sage.Connector.Cloud.Integration.MockServiceLibrary
+		SccLocalPath3 = ..\\..\\Projects\\Sage.Connector.Cloud.Integration.MockServiceLibrary
+		SccProjectUniqueName4 = ..\\..\\Projects\\Sage.Connector.Cloud.Integration.Proxy\\Sage.Connector.Cloud.Integration.Proxy.csproj
+		SccProjectName4 = ../../Projects/Sage.Connector.Cloud.Integration.Proxy
+		SccLocalPath4 = ..\\..\\Projects\\Sage.Connector.Cloud.Integration.Proxy
+		SccProjectUniqueName5 = ..\\..\\Projects\\Sage.Connector.Cloud.Integration.Test\\Sage.Connector.Cloud.Integration.Test.csproj
+		SccProjectName5 = ../../Projects/Sage.Connector.Cloud.Integration.Test
+		SccLocalPath5 = ..\\..\\Projects\\Sage.Connector.Cloud.Integration.Test
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7F0787B4-E149-430D-AA74-7A164B51EFDE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F0787B4-E149-430D-AA74-7A164B51EFDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F0787B4-E149-430D-AA74-7A164B51EFDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F0787B4-E149-430D-AA74-7A164B51EFDE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81862806-3AF0-41C6-9119-635322B71819}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81862806-3AF0-41C6-9119-635322B71819}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81862806-3AF0-41C6-9119-635322B71819}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81862806-3AF0-41C6-9119-635322B71819}.Release|Any CPU.Build.0 = Release|Any CPU
+		{130B3A41-8C63-41D0-9E10-B59564606A92}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{130B3A41-8C63-41D0-9E10-B59564606A92}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{130B3A41-8C63-41D0-9E10-B59564606A92}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{130B3A41-8C63-41D0-9E10-B59564606A92}.Release|Any CPU.Build.0 = Release|Any CPU
+		{694A4128-5C39-43E4-836F-3CBB8F16E0BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{694A4128-5C39-43E4-836F-3CBB8F16E0BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{694A4128-5C39-43E4-836F-3CBB8F16E0BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{694A4128-5C39-43E4-836F-3CBB8F16E0BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{25A73319-6934-478D-A6C0-F9D53A6A2388}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{25A73319-6934-478D-A6C0-F9D53A6A2388}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{25A73319-6934-478D-A6C0-F9D53A6A2388}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{25A73319-6934-478D-A6C0-F9D53A6A2388}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = Dev_Integration.vsmdi
+	EndGlobalSection
+EndGlobal

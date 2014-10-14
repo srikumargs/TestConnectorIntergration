@@ -1,0 +1,225 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\..\Build\Targets\SageIntegrationGlobal.props" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7F0787B4-E149-430D-AA74-7A164B51EFDE}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Sage.Connector.Cloud.Integration.Interfaces</RootNamespace>
+    <AssemblyName>Sage.Connector.Cloud.Integration.Interfaces</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+    <!-- The following three properties are needed by Sage.BuildNumber.targets-->
+    <SageLinkedSourceDirectory>..\..\LinkedSource</SageLinkedSourceDirectory>
+    <!-- nuget settings -->
+    <CreateNuGetPackage>true</CreateNuGetPackage>
+    <!-- Force the use of nuget base path, as we are using slightly non trivial nuspecs-->
+    <UseNugetBasePath>true</UseNugetBasePath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>
+    </NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <DocumentationFile>
+    </DocumentationFile>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>..\..\LinkedSource\SageCRECloud.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\LinkedSource\GlobalAssemblyInfo.cs">
+      <Link>Properties\GlobalAssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="DataContracts\Category.cs" />
+    <Compile Include="DataContracts\Certification.cs" />
+    <Compile Include="DataContracts\ConfigParams.cs" />
+    <Compile Include="DataContracts\CompanyContact.cs" />
+    <Compile Include="DataContracts\CostCode.cs" />
+    <Compile Include="DataContracts\CpuProfileData.cs" />
+    <Compile Include="DataContracts\DomainMediation.cs" />
+    <Compile Include="DataContracts\DownloadSessionInfo.cs" />
+    <Compile Include="DataContracts\Employee.cs" />
+    <Compile Include="DataContracts\EntityErrorInformation.cs" />
+    <Compile Include="DataContracts\EntityTypeTags\EntityTypeTag.cs" />
+    <Compile Include="DataContracts\EntityTypeTags\JobEntityTypeTag.cs" />
+    <Compile Include="DataContracts\EntityTypeTags\VendorEntityTypeTag.cs" />
+    <Compile Include="DataContracts\Equipment.cs" />
+    <Compile Include="DataContracts\EquipmentCost.cs" />
+    <Compile Include="DataContracts\EquipmentCostCode.cs" />
+    <Compile Include="DataContracts\ErrorInformation.cs" />
+    <Compile Include="DataContracts\Job.cs" />
+    <Compile Include="DataContracts\Note.cs" />
+    <Compile Include="DataContracts\PayPeriod.cs" />
+    <Compile Include="DataContracts\PayType.cs" />
+    <Compile Include="DataContracts\PerformanceConfigParams.cs" />
+    <Compile Include="DataContracts\PersonContact.cs" />
+    <Compile Include="DataContracts\ProductionUnit.cs" />
+    <Compile Include="DataContracts\ReportDescriptors\Parameters\DateMonthDayReportParam.cs" />
+    <Compile Include="DataContracts\ReportDescriptors\Parameters\DateTimeReportParam.cs" />
+    <Compile Include="DataContracts\ReportDescriptors\Parameters\InformationalTextReportParam.cs" />
+    <Compile Include="DataContracts\ReportDescriptors\Parameters\TimeElapsedReportParam.cs" />
+    <Compile Include="DataContracts\PremiseAgent.cs" />
+    <Compile Include="DataContracts\ReportDescriptors\Parameters\KeyName.cs" />
+    <Compile Include="DataContracts\ReportDescriptors\Parameters\DateMonthYearReportParam.cs" />
+    <Compile Include="DataContracts\ReportDescriptors\Parameters\MultiSelectReportParam.cs" />
+    <Compile Include="DataContracts\ReportDescriptors\Parameters\PercentageReportParam.cs" />
+    <Compile Include="DataContracts\ReportDescriptors\Parameters\PhoneNumberReportParam.cs" />
+    <Compile Include="DataContracts\ReportDescriptors\Parameters\SingleSelectReportParam.cs" />
+    <Compile Include="DataContracts\ReportDescriptors\Parameters\SocialSecurityNumberReportParam.cs" />
+    <Compile Include="DataContracts\ReportDescriptors\Parameters\TimeOfDayReportParam.cs" />
+    <Compile Include="DataContracts\ReportDescriptors\Parameters\DecimalReportParam.cs" />
+    <Compile Include="DataContracts\ReportDescriptors\Parameters\DateReportParam.cs" />
+    <Compile Include="DataContracts\ReportDescriptors\Parameters\CurrencyReportParam.cs" />
+    <Compile Include="DataContracts\ReportDescriptors\Parameters\NumberReportParam.cs" />
+    <Compile Include="DataContracts\ReportDescriptors\Parameters\ReportParam.cs" />
+    <Compile Include="DataContracts\ReportDescriptors\Parameters\ReportParameterEnums.cs" />
+    <Compile Include="DataContracts\ReportDescriptors\Parameters\StringReportParam.cs" />
+    <Compile Include="DataContracts\ReportValues\BooleanReportParamValue.cs" />
+    <Compile Include="DataContracts\ReportValues\DateMonthDayReportParamValue.cs" />
+    <Compile Include="DataContracts\ReportValues\DateMonthYearReportParamValue.cs" />
+    <Compile Include="DataContracts\ReportValues\DateTimeReportParamValue.cs" />
+    <Compile Include="DataContracts\ReportValues\MultiSelectReportParamValue.cs" />
+    <Compile Include="DataContracts\ReportValues\SingleSelectReportParamValue.cs" />
+    <Compile Include="DataContracts\ReportValues\PercentageReportParamValue.cs" />
+    <Compile Include="DataContracts\ReportValues\PhoneNumberReportParamValue.cs" />
+    <Compile Include="DataContracts\ReportValues\ReportParamValue.cs" />
+    <Compile Include="DataContracts\ReportValues\SocialSecurityNumberReportParamValue.cs" />
+    <Compile Include="DataContracts\ReportValues\TimeElapsedReportParamValue.cs" />
+    <Compile Include="DataContracts\ReportValues\TimeOfDayReportParamValue.cs" />
+    <Compile Include="DataContracts\ReportValues\DecimalReportParamValue.cs" />
+    <Compile Include="DataContracts\ReportValues\DateReportParamValue.cs" />
+    <Compile Include="DataContracts\ReportValues\CurrencyReportParamValue.cs" />
+    <Compile Include="DataContracts\ReportValues\StringReportParamValue.cs" />
+    <Compile Include="DataContracts\ServiceInfo.cs" />
+    <Compile Include="DataContracts\SiteServiceInfo.cs" />
+    <Compile Include="DataContracts\StringList.cs" />
+    <Compile Include="DataContracts\SubJob.cs" />
+    <Compile Include="DataContracts\SystemFilters\SingleValueSystemFilterParam.cs" />
+    <Compile Include="DataContracts\SystemFilters\SingleValueSystemFilterParamValue.cs" />
+    <Compile Include="DataContracts\SystemFilters\SystemFilterParam.cs" />
+    <Compile Include="DataContracts\SystemFilters\SystemFilterParamValue.cs" />
+    <Compile Include="DataContracts\TenantInfo.cs" />
+    <Compile Include="DataContracts\TimeEntry.cs" />
+    <Compile Include="DataContracts\UpgradeInfo.cs" />
+    <Compile Include="DataContracts\UploadSessionInfo.cs" />
+    <Compile Include="DataContracts\Vendor.cs" />
+    <Compile Include="EndpointBehaviors\GetHttpRequestHeaderDispatchBehavior.cs" />
+    <Compile Include="EndpointBehaviors\SetHttpRequestHeaderClientBehavior.cs" />
+    <Compile Include="Faults\BaseDataContractFault.cs" />
+    <Compile Include="Faults\ConnectivityFault.cs" />
+    <Compile Include="Faults\SerializationFault.cs" />
+    <Compile Include="Faults\IncompatibleClientFault.cs" />
+    <Compile Include="Faults\InvalidResponseFault.cs" />
+    <Compile Include="Faults\TenantConnectionDisabledFault.cs" />
+    <Compile Include="Headers\HeaderCommon.cs" />
+    <Compile Include="IAdminService.cs" />
+    <Compile Include="IDownloadSessionService.cs" />
+    <Compile Include="IGatewayService.cs" />
+    <Compile Include="IRequestService.cs" />
+    <Compile Include="IResponseService.cs" />
+    <Compile Include="IUploadSessionService.cs" />
+    <Compile Include="MessageInspectors\GetHttpRequestHeaderDispatchInspector.cs" />
+    <Compile Include="MessageInspectors\MessageInspectorHelper.cs" />
+    <Compile Include="MessageInspectors\SetHttpRequestHeaderClientInspector.cs" />
+    <Compile Include="Requests\ConnectorRegistrationRequest.cs" />
+    <Compile Include="Requests\DomainMediationRequest.cs" />
+    <Compile Include="Requests\HealthCheckRequest.cs" />
+    <Compile Include="Requests\GetLogRequest.cs" />
+    <Compile Include="Requests\GetMetricsRequest.cs" />
+    <Compile Include="Requests\LoopBackRequest.cs" />
+    <Compile Include="Requests\UpdateConfigParamsRequest.cs" />
+    <Compile Include="Requests\Request.cs" />
+    <Compile Include="DataContracts\ReportDescriptors\Parameters\BooleanReportParam.cs" />
+    <Compile Include="DataContracts\ReportDescriptors\ReportDescriptor.cs" />
+    <Compile Include="Faults\RetiredEndpointFault.cs" />
+    <Compile Include="Requests\UpdateSiteServiceInfoRequest.cs" />
+    <Compile Include="Responses\DomainMediationRequestResponse.cs" />
+    <Compile Include="Responses\HealthCheckStatus.cs" />
+    <Compile Include="Responses\HealthCheckRequestResponse.cs" />
+    <Compile Include="Responses\ErrorResponse.cs" />
+    <Compile Include="Responses\ErrorResponseAction.cs" />
+    <Compile Include="Responses\GetLogRequestResponse.cs" />
+    <Compile Include="Responses\GetMetricsRequestResponse.cs" />
+    <Compile Include="Responses\LoopBackRequestResponse.cs" />
+    <Compile Include="Responses\Response.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Responses\UpdateConfigParamsResponse.cs" />
+    <Compile Include="Responses\UpdateSiteServiceInfoRequestResponse.cs" />
+    <Compile Include="ServiceConstants.cs" />
+    <Compile Include="Utils\Extensions.cs" />
+    <Compile Include="Utils\IndirectPayloadAttribute.cs" />
+    <Compile Include="Utils\IndirectPayloadUsage.cs" />
+    <Compile Include="Utils\MessageHashManager.cs" />
+    <Compile Include="Utils\PropertyTuple.cs" />
+    <Compile Include="Utils\SerializationHelper.cs" />
+    <Compile Include="WebAPI\Configuration.cs" />
+    <Compile Include="WebAPI\JsonSerialization.cs" />
+    <Compile Include="WebAPI\TenantInfo.cs" />
+    <Compile Include="WebAPI\TenantRegistration.cs" />
+    <Compile Include="WebAPI\WebAPIMessage.cs" />
+    <Compile Include="WebAPI\WebAPIMessageHelper.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\LinkedSource\SageCRECloud.snk">
+      <Link>SageCRECloud.snk</Link>
+    </None>
+    <None Include="Sage.Connector.Cloud.Integration.interfaces.nuspec" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- Include the targets that create the version number files. -->
+  <Import Project="..\..\Build\Targets\SageIntegrationGlobal.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild"">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
